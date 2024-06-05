@@ -7,15 +7,14 @@ public Boolean companionPlants(String plant1, String plant2) {
         'tomatoes' => 'onions'
 };
 
-if ((companionMap.get (plant1) == plant2)  ||
-(companionMap.get(plant2) == plant1)))
+
+if ((companionMap.get(plant1) == plant2)  ||
+      (companionMap.get(plant2) == plant1))
 {
     return true;
 }
 else {
     return false;
 }
-
-
 
 }
