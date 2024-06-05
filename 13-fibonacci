@@ -1,0 +1,14 @@
+public Integer fibonacci(Integer n) {
+    //code here
+    Integer temp=0;
+    Integer last=1;
+    Integer current;
+    for(Integer i=3;i<n;i++){
+        temp=current;
+        current+=last;
+        last=temp;
+
+    }
+    return current;
+
+}
