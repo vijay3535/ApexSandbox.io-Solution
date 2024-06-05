@@ -1,9 +1,9 @@
 public Boolean companionPlants(String plant1, String plant2) {
-Map<string,string> companionMap = new Map<string,string>{
-  'cucumbers' => 'lettuce',
-        'onions' => 'lettuce',
-        'carrots' => 'onions',
-        'tomatoes' => 'onions'
+'lettuce' => 'cucumbers',
+'lettuce' => 'onions',
+'onions' => 'carrots',
+'onions' => 'tomatoes',
+
 };
 
 if((companionMap.get (plant1) == (plant2)  ||
