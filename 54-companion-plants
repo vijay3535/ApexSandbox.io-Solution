@@ -1,6 +1,6 @@
 public Boolean companionPlants(String plant1, String plant2) {
 
-  map<string,set<string>  companionPlants = new map<string,set<string>();
+  map<string,set<string>>  companionPlants = new map<string,set<string>>();
 
   companionPlants.put('onions', new set<string>{'lettuce','carrots','tomatoes'});
    companionPlants.put('lettuce', new set<string>{'cucumbers','onions'});
