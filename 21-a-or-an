@@ -5,8 +5,7 @@ public String aOrAn(String word) {
      if(word.startsWithIgnoreCase(vowel)){
          word = 'an' + word;
      }
-      }
-     else
+ }
        word = 'a' + word;
 
 }
