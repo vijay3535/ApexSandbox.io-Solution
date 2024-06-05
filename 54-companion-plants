@@ -1,10 +1,18 @@
 public Boolean companionPlants(String plant1, String plant2) {
-set<string> compaionship = new set<string>{' lettuce+cucumbers',
-'lettuce+onions','onions+carrots','onions+tomatoes'};
-   String combination1 = plant1 + '+' + plant2;
-        String combination2 = plant2 + '+' + plant1;
-        
-        return companionship.contains(combination1) || companionship.contains(combination2);
-  
+Map<string,string> companionMap = new Map<string.string>{
+'lettuce' => 'cucumbers';
+'lettuce' => 'onions';
+'onions' => 'carrots';
+'onions' => 'tomatoes';
+};
+
+if(companionMap.get (plant1) == (plant2)  ||
+(companionMap.get(plant2) == plant1)))
+{
+    return true;
+}
+else {
+    return false;
+}
 
 }
