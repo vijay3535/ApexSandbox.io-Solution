@@ -3,7 +3,9 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
 
     if((passedExam && passedAssignments) || (passedExam && passedProject)
     || (passedProject && passedAssignments)){
-        return true
-    }else 
-    return false
+        return true;
+    }else {
+ return false
+    }
+   
 }
