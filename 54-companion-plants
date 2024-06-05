@@ -1,20 +1,23 @@
 public Boolean companionPlants(String plant1, String plant2) {
 
-	Map<string,String> companionMap = new Map<String,String>{
-        'cucumbers' => 'lettuce',
-        'onions' => 'lettuce',
-        'carrots' => 'onions',
-        'tomatoes' => 'onions'
-};
+    Map<String,Set<String>> companionPlants = new Map<String,Set<String>>();
 
+    companionPlants.put('onions', new Set<String>{'lettuce', 'carrots', 'tomatoes'});
 
-if ((companionMap.get(plant1) == plant2)  ||
-      (companionMap.get(plant2) == plant1))
-{
-    return true;
-}
-else {
+    companionPlants.put('lettuce', new Set<String>{'cucumbers', 'onions'});
+
+    if(companionPlants.containsKey(plant1)){
+
+        return companionPlants.get(plant1).contains(plant2);
+
+    }
+
+    if(companionPlants.containsKey(plant2)){
+
+        return companionPlants.get(plant2).contains(plant1);
+
+    }
+
     return false;
-}
 
 }
