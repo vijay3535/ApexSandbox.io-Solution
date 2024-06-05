@@ -9,6 +9,8 @@ public Integer nextPrime(Integer num) {
     while(!isprime((candidate))){
  candidate += 1;
     }
+        return candidate;
+
 }
     public Boolean isprime(Integer candidate){
         for(integer i=2; i<candidate; i++){
