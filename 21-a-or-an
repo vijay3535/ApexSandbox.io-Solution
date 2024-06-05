@@ -1,11 +1,11 @@
 public String aOrAn(String word) {
     //code here
-List<String> vowels = new List<String>{'a','e','i','o','u'};
-    for (String vowel : vowels) {
-        if (word.startsWithIgnoreCase(vowel)) {
-            return 'an ' + word;
-        }
-    }
-    return 'a ' + word;
+ List <string> vowels = new List<string>{'a', 'e', 'i', 'o', 'u'};
+ for(string vowel:vowels){
+     if(word.startsWith(vowel)){
+       return  word = 'an' + word;
+     }
+ }
+    return   word = 'a' + word;
 
 }
