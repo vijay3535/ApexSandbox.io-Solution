@@ -1,0 +1,22 @@
+public Integer nextPrime(Integer num) {
+    //code here
+
+    if(num < 2 ){
+         return 2;
+    }
+
+    Integer candidate = num + i;
+    while(!isprime((candidate))){
+ candidate += 1;
+    }
+}
+    public Boolean isprime(Integer candidate){
+        for(integer i=2; i<candidate; i++){
+            if(Math.mod(candidate,i) == 0){
+                            return false;
+
+            }
+
+        }
+ return true;
+    }
