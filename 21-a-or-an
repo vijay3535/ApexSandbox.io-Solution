@@ -3,9 +3,9 @@ public String aOrAn(String word) {
  List <string> vowels = new List<string>({a, e, i, o, or u});
  for(string vowel:vowels){
      if(word.startsWithIgnoreCase(vowel)){
-         word = 'an + word';
+         word = 'an' + word;
      }
      else
-         word = 'a + word';
+         word = 'a' + word;
  }
 }
