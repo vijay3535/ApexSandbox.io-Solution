@@ -6,6 +6,7 @@ public String aOrAn(String word) {
          word = 'an' + word;
      }
      else
+      }
          word = 'a' + word;
- }
+
 }
