@@ -5,7 +5,7 @@ public Integer nextPrime(Integer num) {
          return 2;
     }
 
-    Integer candidate = num + i;
+    Integer candidate = num + 1;
     while(!isprime((candidate))){
  candidate += 1;
     }
