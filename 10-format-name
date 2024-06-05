@@ -9,8 +9,7 @@ else if (String.isBlank(firstName)) {
 }  else if (String.isBlank(lastName)) {
         return firstName;
 }
-else{
-    return LastName + ' ,' LastName;
-
-}
+else {
+        return lastName + ', ' + firstName;
+    }
 }
