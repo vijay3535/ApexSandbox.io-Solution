@@ -6,10 +6,11 @@ public String formatName(String firstName, String lastName) {
 else if (String.isBlank(firstName)) {
         return lastName;
 
-} else if (String.isBlank(firstName)){
-    return lastName;
-	}
+}  else if (String.isBlank(lastName)) {
+        return firstName;
+}
 else{
     return LastName + ' ,' LastName;
 
+}
 }
