@@ -9,9 +9,11 @@ if(course.size()==0){
 }
 
 apxio__Course__c coursest = new apxio__Course__c();
-coursest.apxio__Course__c=course[0].id;
-coursest.name=course[0].name;
+coursest.apxio__Course__c = course[0].id;
+coursest.name = course[0].name;
 
 insert coursest;
+
+return coursest.Id;
 
 }
