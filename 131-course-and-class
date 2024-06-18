@@ -6,7 +6,7 @@ public void createCourseAndClass(String name, String description) {
          createRecords.apxio__Course_Details__c =description;
 
          insert createRecords;
-    // code here
+
 
     apxio__Class__c courseinsertRecords = new apxio__Class__c();
     courseinsertRecords.name=name;
