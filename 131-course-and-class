@@ -10,7 +10,7 @@ public void createCourseAndClass(String name, String description) {
 
     apxio__Class__c courseinsertRecords = new apxio__Class__c();
     courseinsertRecords.Name=name;
-   courseinsertRecords.apxio__Class__c=createRecords.Id;
+   courseinsertRecords.apxio__Course__c=createRecords.id;
    courseinsertRecords.apxio__Description__c = description?.left(255);
 
 insert courseinsertRecords;
