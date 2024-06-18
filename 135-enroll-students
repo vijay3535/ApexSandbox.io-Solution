@@ -1,0 +1,24 @@
+public void enrollStudents(List<String> emails, String className) {
+    // code here
+
+    List<apxio__Class_Enrollment__c> classEnrollment = new List<apxio__Class_Enrollment__c>();
+
+    List<apxio__Student__c> students =[select Id,apxio__Email__c from apxio__Student__c where 
+    apxio__Email__c=:emails];
+
+    List<apxio__Class__c> cls = [select Id,Name from apxio__Class__c where 
+    Name=:className];
+
+    for(Integer i=0;i<students.size(); i++){
+                apxio__Class_Enrollment__c enrollment = new apxio__Class_Enrollment__c();
+     enrollment.apxio__Student__c = students[i].Id;
+     enrollment.apxio__Class__c =cls[0].Id;
+     classEnrollment.add(enrollment);
+
+    }
+
+    insert classEnrollment;
+
+
+
+}
