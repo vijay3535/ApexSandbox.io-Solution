@@ -1,0 +1,8 @@
+public List<apxio__Student__c> selectActiveStudents() {
+    // code here
+
+    apxio__Student__c retrivestudent = [select Id,apxio__Student__c, 
+    
+    apxio__Student__c.apxio__Active__c from  apxio__Student__c where apxio__Student__c.apxio__Active__c=true ]
+  return retrivestudent;
+}
