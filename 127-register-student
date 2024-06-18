@@ -6,7 +6,7 @@ public String registerStudent(String name, String phone, String email) {
       student.apxio__Email__c=email;
        insert student;
 
-List<apxio__Student__c> insertedStudent =[select 
+apxio__Student__c insertedStudent =[select 
 apxio__Registration_Number__c from apxio__Student__c where id = :student.id ];
 
    return  insertedStudent.apxio__Registration_Number__c;
