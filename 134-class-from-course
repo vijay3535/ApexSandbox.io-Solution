@@ -4,7 +4,7 @@ List<apxio__Course__c> course = [select id,Name
  from apxio__Course__c where 
  apxio__Course__c.Name =: courseName];
 
-if(course.size()=0){
+if(course.size()==0){
     return null;
 }
 
