@@ -4,16 +4,20 @@ List<apxio__Course__c> course = [select id,Name
  from apxio__Course__c where 
  apxio__Course__c.Name =: courseName];
 
-if(course.size()==0){
+if(course.size () == 0){
     return null;
 }
 
-apxio__Course__c cls = new apxio__Course__c();
+apxio__Class__c cls = new apxio__Class__c();
 cls.apxio__Course__c = course[0].id;
 cls.name = course[0].name;
 
-insert coursest;
+insert cls;
 
 return cls.Id;
 
 }
+
+
+
+    
