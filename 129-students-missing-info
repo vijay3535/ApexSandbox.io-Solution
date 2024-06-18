@@ -3,7 +3,7 @@ public List<apxio__Student__c> selectStudentsWithoutContactInfo() {
 
     List<apxio__Student__c> nocontactinfo = [select Id,name from apxio__Student__c 
      where  apxio__Active__c=True AND (apxio__Email__c) || (apxio__Phone__c = null)
-      order by name ASC ]
+      order by name ASC ];
 
       return nocontactinfo;
 
