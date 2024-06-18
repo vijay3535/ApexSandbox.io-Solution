@@ -8,12 +8,12 @@ if(course.size()==0){
     return null;
 }
 
-apxio__Course__c coursest = new apxio__Course__c();
-coursest.apxio__Course__c = course[0].id;
-coursest.name = course[0].name;
+apxio__Course__c cls = new apxio__Course__c();
+cls.apxio__Course__c = course[0].id;
+cls.name = course[0].name;
 
 insert coursest;
 
-return coursest.Id;
+return cls.Id;
 
 }
